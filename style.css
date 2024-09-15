@@ -1,0 +1,165 @@
+header {
+    display: flex;
+    width: 100%;
+    height: 4 0px;
+    justify-content: flex-end;
+    border-bottom: 1px black solid;
+    background-color: #302681;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0a2870;
+}
+
+/* 
+.titulo-box{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffcb00	;
+}
+
+.titulo{
+    font-size: 80px;
+    font-family: montserrat;
+    color: #FFF;
+    font-weight: bold;
+}
+.imagem{
+    width: 250px;
+} */
+.capa {
+    width: 100%;
+    height: 500px;
+    background-image: url("Fotos/FEED\ 3\ imagens.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.texto-box {
+    width: 100%;
+    background-color: #fed800;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.texto-box-inner{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.icon{
+    width: 30px;
+}
+
+.item{
+    font-size: 30px;
+    color: #302681;
+    text-decoration: none;
+    font-family: roboto;
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+}
+
+.texto {
+    font-family: roboto;
+    padding: 20px;
+    width: 600px;
+    color: #0a2870;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+footer {
+    align-self: bottom;
+    color: #fff;
+    display: flex;
+    font-size: 10px;
+    width: 70%;
+    height: 30px;
+    font-family: roboto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* footer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: ;
+} */
+
+
+@media screen and (max-width: 700px) { 
+
+    .capa{
+    background-image: url("Fotos/1.png");
+    height: 330px;
+
+    }
+
+    .texto-box-inner{
+        width: 100%;
+        flex-direction: column;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .texto{
+        font-size: 15px;
+        width: 80%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .lista{
+        flex-direction: row;
+        width: 90%;
+        gap: 10px;
+        justify-content: center;
+    }
+    .item{
+        font-size: 15px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .icon{
+        width: 30px;
+    }
+    footer{
+        align-self: bottom;
+        color: #fff;
+        display: flex;
+        font-size: 8px;
+        width: 100%;
+        height: 30px;
+        font-family: roboto;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    footer div {
+        width: 50%;
+        font-size: 7px;
+    }
+}
